@@ -22,8 +22,6 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
     const { members } = useActiveList(); 
     const isActive = members.indexOf(otherUser?.email!) !== -1;
 
-
-
     const statusText = useMemo(() => {
         if (conversation.isGroup) {
             return `${conversation.users.length} members`;

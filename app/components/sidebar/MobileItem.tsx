@@ -17,7 +17,7 @@ const MobileItem: React.FC<MobileItemProps> = ({href, icon: Icon, active, onClic
         }
     }
     return (
-        <Link href={href} onClick={onClick} className={clsx(`
+        <Link href={href} onClick={handleClick} className={clsx(`
         group
         flex
         gap-x-3
